@@ -48,7 +48,7 @@ a:hover {
 
 .main-content {
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   width: 100%;
   margin-left: 0%;
   max-width: 1200px;
