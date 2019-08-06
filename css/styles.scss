@@ -112,17 +112,14 @@ article{
 
 }
 
-.heading,
 h1,h2,h3,h4,h5,h6{
-
 	font-family: 'Montserrat', sans-serif !important;
 	font-weight: 800;
 	text-transform: uppercase;
-
 }
 
 .heading{
-  font-size: 38px;
+  font-size: 2.2em;
 }
 
 .highlight{
@@ -439,7 +436,9 @@ $bar-spacing: 8px;
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-
+  .heading {
+    font-size: 2.4em;
+  }
 }
 
 /* Medium devices (tablets, 768px and up)*/
