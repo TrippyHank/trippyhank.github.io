@@ -442,21 +442,23 @@ $bar-spacing: 8px;
 }
 
 .not-found {
-  width: 540px;
+  width: 100%;
   padding: 0 1em;
   margin: 5em auto;
 
   object {
     padding-left: 3em;
+    width: 100%;
   }
 
   p {
     text-align: center;
     color: #2b6ef8;
-    font-family: 'Lucida Grande';
+    font-family: "Lucida Grande";
     font-size: 1em;
     font-weight: bold;
     padding: 0 4em;
+    margin-top: 1em;
   }
 }
 
