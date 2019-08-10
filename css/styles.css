@@ -375,16 +375,19 @@ section.pink {
 
 .not-found {
   width: 540px;
-  padding: 0 2em;
-  margin: auto;
+  padding: 0 1em;
+  margin: 5em auto;
 }
 .not-found object {
-  padding-left: 5em;
+  padding-left: 3em;
 }
 .not-found p {
   text-align: center;
   color: #2b6ef8;
-  font-family: Lucida;
+  font-family: "Lucida Grande";
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0 4em;
 }
 
 /* Small devices (landscape phones, 576px and up)*/

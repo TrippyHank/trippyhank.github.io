@@ -443,17 +443,20 @@ $bar-spacing: 8px;
 
 .not-found {
   width: 540px;
-  padding: 0 2em;
-  margin:auto;
+  padding: 0 1em;
+  margin: 5em auto;
 
   object {
-    padding-left: 5em;
+    padding-left: 3em;
   }
 
   p {
     text-align: center;
     color: #2b6ef8;
-    font-family: Lucida;
+    font-family: 'Lucida Grande';
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0 4em;
   }
 }
 
