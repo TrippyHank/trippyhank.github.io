@@ -434,10 +434,21 @@ $bar-spacing: 8px;
   }
 }
 
+.not-found-body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 .not-found {
   width: 540px;
   padding: 0 2em;
   margin:auto;
+
+  object {
+    padding-left: 5em;
+  }
 
   p {
     text-align: center;
