@@ -374,12 +374,13 @@ section.pink {
 }
 
 .not-found {
-  width: 540px;
+  width: 100%;
   padding: 0 1em;
   margin: 5em auto;
 }
 .not-found object {
   padding-left: 3em;
+  width: 100%;
 }
 .not-found p {
   text-align: center;
@@ -388,6 +389,7 @@ section.pink {
   font-size: 1em;
   font-weight: bold;
   padding: 0 4em;
+  margin-top: 1em;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
