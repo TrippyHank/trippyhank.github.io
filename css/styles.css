@@ -366,17 +366,13 @@ section.pink {
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 350ms 350ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.not-found-body {
-  display: flex;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
 .not-found {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  max-width: 720px;
   padding: 0 1em;
-  margin: 5em auto;
+  margin: 2em auto;
 }
 .not-found object {
   padding-left: 3em;
@@ -384,7 +380,7 @@ section.pink {
 }
 .not-found p {
   text-align: center;
-  color: #2b6ef8;
+  color: #0f3a93;
   font-family: "Lucida Grande";
   font-size: 1em;
   font-weight: bold;
