@@ -76,8 +76,23 @@ a:hover {
   background-color: #fff;
 }
 
+#blog {
+  overflow-x: scroll;
+}
+#blog .heading {
+  position: sticky;
+  left: 0;
+}
+#blog .card {
+  min-width: 337.5px;
+}
+#blog .card .card-img-top {
+  object-fit: cover;
+  height: 20vh;
+}
+
 article {
-  font-size: 18px !important;
+  font-size: 1em !important;
   line-height: 1.8rem;
 }
 article p {
@@ -388,10 +403,18 @@ section.pink {
   margin-top: 1em;
 }
 
+#contact {
+  height: 100vh;
+}
+
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   .heading {
     font-size: 2.4em;
+  }
+
+  #contact {
+    height: auto;
   }
 }
 /* Medium devices (tablets, 768px and up)*/
@@ -432,6 +455,10 @@ section.pink {
   }
   #timeline .timeline-item .timeline-icon {
     left: 50%;
+  }
+
+  #contact {
+    height: 100vh;
   }
 }
 /* Large devices (desktops, 992px and up)*/
