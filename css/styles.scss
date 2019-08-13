@@ -189,10 +189,18 @@ h1,h2,h3,h4,h5,h6{
 section {
   padding: 10%;
 
+  &#services {
+
+   .card-deck {
+    .card {
+      -ms-flex: 1 1 calc(50% - 30px);
+      flex: 1 1 calc(50% - 30px);
+    }
+   } 
+  }
+
   &#blog {
-    // overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
+
 
     .heading{
       position: sticky;
@@ -244,24 +252,29 @@ section {
   }
 }
 
-.card-deck {
-  flex-flow: nowrap!important;
-  overflow: auto;
-}
-
 article {
   font-size: 1em!important;
   line-height: 1.8rem;
-  -ms-flex: 1 1 40%!important;
-  flex: 1 0 40%!important;
-  // scroll-snap-align: start;
+  -ms-flex: 1 0 calc(100% - 30px) !important;
+  flex: 1 0 calc(100% - 30px) !important;
 
   p {
     color: rgba(0,0,0,0.8);
   }
 
   img {
+    height: 12em;
     max-width: 100%;
+    object-fit: cover;
+  }
+
+  .card-title {
+    display: inline-block;
+  }
+
+  span.word-count {
+    margin-left: auto;
+    line-height: 1.2
   }
 
   code {
@@ -483,6 +496,11 @@ $bar-spacing: 8px;
 @media (min-width: 576px) {
   .heading {
     font-size: 2.4em;
+  }
+
+  article {
+    -ms-flex: 1 0 calc(100% - 30px) !important;
+    flex: 1 0 calc(100% - 30px) !important;
   }
 
   #contact {

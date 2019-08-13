@@ -165,9 +165,9 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 10%;
 }
-section#blog {
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
+section#services .card-deck .card {
+  -ms-flex: 1 1 calc(50% - 30px);
+  flex: 1 1 calc(50% - 30px);
 }
 section#blog .heading {
   position: sticky;
@@ -207,22 +207,26 @@ section.pink {
   background-color: #fff1f1;
 }
 
-.card-deck {
-  flex-flow: nowrap !important;
-  overflow: auto;
-}
-
 article {
   font-size: 1em !important;
   line-height: 1.8rem;
-  -ms-flex: 1 1 40% !important;
-  flex: 1 0 40% !important;
+  -ms-flex: 1 0 calc(100% - 30px) !important;
+  flex: 1 0 calc(100% - 30px) !important;
 }
 article p {
   color: rgba(0, 0, 0, 0.8);
 }
 article img {
+  height: 12em;
   max-width: 100%;
+  object-fit: cover;
+}
+article .card-title {
+  display: inline-block;
+}
+article span.word-count {
+  margin-left: auto;
+  line-height: 1.2;
 }
 article code {
   background-color: #fbfbfb !important;
@@ -411,6 +415,11 @@ article mark {
 @media (min-width: 576px) {
   .heading {
     font-size: 2.4em;
+  }
+
+  article {
+    -ms-flex: 1 0 calc(100% - 30px) !important;
+    flex: 1 0 calc(100% - 30px) !important;
   }
 
   #contact {
