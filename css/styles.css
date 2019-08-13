@@ -76,42 +76,6 @@ a:hover {
   background-color: #fff;
 }
 
-#blog {
-  overflow-x: scroll;
-}
-#blog .heading {
-  position: sticky;
-  left: 0;
-}
-#blog .card {
-  min-width: 337.5px;
-}
-#blog .card .card-img-top {
-  object-fit: cover;
-  height: 20vh;
-}
-
-article {
-  font-size: 1em !important;
-  line-height: 1.8rem;
-}
-article p {
-  color: rgba(0, 0, 0, 0.8);
-}
-article img {
-  max-width: 100%;
-}
-article code {
-  background-color: #fbfbfb !important;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-article mark {
-  background-color: white;
-  color: #c80000;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif !important;
   font-weight: 800;
@@ -201,6 +165,14 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 10%;
 }
+section#blog {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+section#blog .heading {
+  position: sticky;
+  left: 0;
+}
 section .heading {
   margin-bottom: 30px;
 }
@@ -235,17 +207,45 @@ section.pink {
   background-color: #fff1f1;
 }
 
+.card-deck {
+  flex-flow: nowrap !important;
+  overflow: auto;
+}
+
+article {
+  font-size: 1em !important;
+  line-height: 1.8rem;
+  -ms-flex: 1 1 40% !important;
+  flex: 1 0 40% !important;
+}
+article p {
+  color: rgba(0, 0, 0, 0.8);
+}
+article img {
+  max-width: 100%;
+}
+article code {
+  background-color: #fbfbfb !important;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+article mark {
+  background-color: white;
+  color: #c80000;
+}
+
+.card {
+  border-radius: 6px;
+  border: none;
+}
+
 .progress {
   height: 0.6rem;
   background-color: #fff;
 }
 .progress .bg-blue {
   background-color: #2e96a5;
-}
-
-.card {
-  border-radius: 6px;
-  border: none;
 }
 
 #timeline {
