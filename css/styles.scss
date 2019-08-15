@@ -189,6 +189,20 @@ h1,h2,h3,h4,h5,h6{
 section {
   padding: 10%;
 
+  &.single {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+  }
+
+  &.section {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+  }
+
   &#services {
 
    .card-deck {
