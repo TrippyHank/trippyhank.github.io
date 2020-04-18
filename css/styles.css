@@ -5,8 +5,18 @@ html {
   overflow-y: scroll;
 }
 
+body {
+  min-width: 375px;
+}
+
 a:hover {
   text-decoration: none;
+}
+
+.main-info {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .sidebar {
@@ -30,10 +40,8 @@ a:hover {
   opacity: 1;
 }
 .sidebar .lang-selector {
-  position: absolute;
-  top: 1em;
   font-size: 1.4em;
-  right: 2em;
+  text-align: right;
 }
 .sidebar .lang-selector a {
   color: lightgray;
