@@ -512,6 +512,10 @@ $bar-spacing: 8px;
 
 #contact {
   height: 100vh;
+
+  .form-control[name="message"] {
+    min-height: 128px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up)*/

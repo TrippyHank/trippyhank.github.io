@@ -430,6 +430,9 @@ article mark {
 #contact {
   height: 100vh;
 }
+#contact .form-control[name=message] {
+  min-height: 128px;
+}
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
